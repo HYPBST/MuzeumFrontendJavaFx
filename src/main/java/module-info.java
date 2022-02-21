@@ -9,7 +9,10 @@ module com.example.muzeumfrontendjavafx {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires com.google.gson;
 
     opens com.example.muzeumfrontendjavafx to javafx.fxml;
     exports com.example.muzeumfrontendjavafx;
+    exports com.example.muzeumfrontendjavafx.controllers;
+    opens com.example.muzeumfrontendjavafx.controllers to javafx.fxml;
 }
